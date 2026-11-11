@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f4f7f9; color: #222; }
+
+.navbar {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+  background: #0b3d5c; padding: 12px 24px; color: white;
+}
+.logo { font-size: 22px; font-weight: bold; }
+.links a { color: white; text-decoration: none; margin-right: 18px; }
+.links a:hover { text-decoration: underline; }
+.search-area input { padding: 6px 10px; width: 220px; }
+.search-area button { padding: 6px 12px; cursor: pointer; }
+
+.hero {
+  min-height: 70vh; display: flex; align-items: center; padding: 40px;
+  background-color: #1e6f8c;
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/bg.jpg');
+  background-size: cover; background-position: center;
+}
+.hero-text { max-width: 600px; color: white; }
+.hero-text h1 { font-size: 40px; margin-bottom: 16px; }
+.hero-text p { font-size: 18px; line-height: 1.5; }
+
+.page { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.page h1 { margin-bottom: 16px; }
+.page h2 { margin: 24px 0 12px; }
+.team { display: flex; gap: 16px; flex-wrap: wrap; }
+.member { background: white; padding: 16px; border-radius: 8px; flex: 1; min-width: 200px; }
+
+.contact-form { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.contact-form input, .contact-form textarea { padding: 8px; }
+.contact-form button { padding: 10px; cursor: pointer; }
+
+.results { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; padding: 24px; }
